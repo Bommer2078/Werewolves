@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>玩家配比</title>
+    <link rel="stylesheet" href="../less/comment.css">
+    <link rel="stylesheet" href="../less/roleAssignment.css">
+</head>
+<body>
+    <header class="ontop">
+        <a href="../index.html" id="goback"></a>
+    </header>
+    <section class="role-section1 shadow">
+        <span>玩家配比</span>
+    </section>
+    <section class="role-section2 shadow" id="role">
+        <div><div class="icon-lr"></div><span>狼人<num>1</num>人</span></div>
+        <div><div class="icon-hunter"></div><span>猎人<num>1</num>人</span></div>
+        <div><div class="icon-yy"></div><span>狙击手<num>1</num>人</span></div>
+        <div><div class="icon-nw"></div><span>女巫<num>1</num>人</span></div>
+        <div><div class="icon-cm"></div><span>村民<num>4</num>人</span></div>
+    </section>
+    <section class="shadow flexbox"></section>
+    <section class="role-section3 shadow">
+        <span>请输入玩家数量</span>
+        <input type="text" id="playNumber" value="8">
+        <span>玩家数量为5-20</span>
+    </section>
+    <footer class="roles-footer">
+        <div class="btn" id="roleBtn">
+            去发牌
+        </div>
+    </footer>
+    <div class="mask" id="flopMask">
+        <div class="alert">
+            <span>请输入正确的数值</span>
+            <span>取消</span><span>确定</span>
+        </div>
+    </div>
+    <script src="../js/comment.js"></script>
+    <script src="../js/roleAssignment.js"></script>
+</body>
+</html>

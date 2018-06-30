@@ -1,0 +1,146 @@
+@import (reference)"comment";
+body{
+  background: @maincolor;
+}
+@demo2FontColor:#333;
+.demo2-header{
+  .demo2-header-menu{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    .backgroundPic("../img/set.png");
+  }
+  .demo2-header-close{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    .backgroundPic("../img/close.png");
+  }
+}
+.speak{
+  width: 100%;
+  height: 41px;
+  background: #b9e9f5;
+  display: flex;
+  align-items: center;
+  padding:0 9px 0 23px;
+  justify-content: space-between;
+  box-sizing:border-box;
+  position: relative;
+  :first-child{
+    font-size:13px;
+    color:@demo2FontColor;
+  }
+  .play{
+    width: 26px;
+    height: 26px;
+    background: url("../img/play.png") no-repeat center;
+    background-size: contain;
+  }
+  .demo2-sj{
+    height: 0;
+    width: 0;
+    border-top: 7px solid #b9e9f5;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent;
+    position: absolute;
+    top:41px;
+    left:11%;
+    z-index: 1;
+  }
+  :last-child{
+    position: fixed;
+    top:85px;
+    left:0;
+    padding-left:11vw;
+    height: 24px;
+    width: 100vw;
+    font-size: 12px;
+    color:#fff;
+    line-height: 24px;
+    background: @maincolor;
+  }
+}
+
+.demo2-main{
+  margin-top:20px;
+  height: e("calc(100vh - 200px)");
+  overflow: auto;
+  background: @maincolor;
+  .demo2-box{
+    width: 22vw;
+    height: 22vw;
+    margin: 4vw;
+    margin-left:5vw;
+    display: inline-block;
+    position: relative;
+    .demo2-sm-box{
+      width: 22vw;
+      height: 22vw;
+      box-sizing: border-box;
+      border:3px solid #fff;
+      display: flex;
+      flex-direction: column;
+      .ident{
+        height: 79%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 4vw;
+        color:@demo2FontColor;
+        background: #f5c97b;
+      }
+      .num{
+        height: 21%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+        color: #fff;
+        background: #83b09a;
+      }
+    }
+    .icon{
+      position: absolute;
+      top:22vw;
+      left:0;
+      width: 22vw;
+      height: 10vw;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      >li{
+        cursor: pointer;
+        width: 22%;
+        > img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .demo2-sm-box:hover~.icon{
+      display: flex;
+    };
+  }
+}
+
+.demo2-footer{
+  position: fixed;
+  bottom: 0;
+  height: 95px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: @maincolor;
+  .demo2-btn{
+    width: 75vw;
+    height: 44px;
+    display: flex;
+    background: #fbb435;
+    color: #fff;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+  }
+}

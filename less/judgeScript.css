@@ -1,0 +1,95 @@
+body {
+  background: #fbe9e9;
+}
+header {
+  z-index: 1;
+}
+.script-section {
+  margin-top: 48px;
+  min-height: calc(100vh - 150px);
+  margin-right: 5px;
+  margin-left: 5px;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+.script-section > div {
+  background: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+.script-section .day {
+  height: 35px;
+  line-height: 35px;
+  width: 100%;
+  text-align: center;
+  color: #29bde0;
+  font-weight: 700;
+}
+.script-section .event {
+  padding: 30px 20px 30px 50px;
+  position: relative;
+}
+.script-section .event::before {
+  content: "";
+  border-bottom: 10px solid #fff;
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  position: absolute;
+  left: 49%;
+  top: -8px;
+}
+.script-section .event > div {
+  border-left: 2px solid #888;
+}
+.script-section .event > div [class*="Time"] li {
+  height: 30px;
+  line-height: 30px;
+  background: #29bde0;
+  margin-left: 35px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+}
+.script-section .event > div [class*="Time"] li::before {
+  content: "";
+  border-right: 10px solid #29bde0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: 8px;
+}
+.script-section .event > div [class*="Time"] li icon {
+  position: absolute;
+  left: -45px;
+}
+.script-section .event > div .nightTime icon {
+  width: 18px;
+  height: 18px;
+  background: url("../img/黑夜.png") no-repeat center;
+  background-size: contain;
+}
+.script-section .event > div .dayTime icon {
+  width: 18px;
+  height: 18px;
+  background: url("../img/白天.png") no-repeat center;
+  background-size: contain;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #29bde07a;
+  height: 80px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .btn {
+  border-radius: 10px;
+  width: 30%;
+}
+/*# sourceMappingURL=judgeScript.css.map */

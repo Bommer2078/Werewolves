@@ -1,0 +1,120 @@
+/*demo3 part*/
+@import (reference)"comment";
+.demo3-header{
+  z-index: 1;
+  .home{
+    width: 26px;
+    height: 21px;
+    background: url("../img/home.png") no-repeat center;
+    background-size: contain;
+  }
+  .info{
+    width: 20px;
+    height: 20px;
+    background: url("../img/info.png") no-repeat center;
+    background-size: contain;
+  }
+}
+
+.demo3-banner{
+  width: 100%;
+  margin-top:44px;
+  padding:0  40px;
+  background: @maincolor;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  > img{
+    align-self: center;
+    margin-bottom: 11px;
+  }
+  > p{
+    font-size: 17px;
+    font-weight: 700;
+    color:#ffc865;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .demo3-info{
+    color:#fff;
+    font-size: 13px;
+    > ul{
+      display: flex;
+      flex-flow: row wrap;
+      > li{
+        margin-right: 22px;
+        margin-bottom: 7px;
+      }
+    }
+    > p{
+      margin-bottom:7px;
+    }
+  }
+}
+
+.demo3-section{
+  padding-bottom: 65px;
+  .demo3-box{
+    border-bottom:2px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 7px 40px 17px;
+    >p,div{
+      display: flex;
+      font-size: 13px;
+      color: #bebebe;
+      .summary{
+        padding-left:30px;
+      }
+    }
+    .demo3-time{
+      display: flex;
+      justify-content: space-between;
+      text-align: end;
+      margin-bottom: 14px;
+      .demo3-day{
+        font-size: 14px;
+        color:#333;
+      }
+      .demo3-hour{
+        font-size: 10px;
+        color:#c2c2c2;
+      }
+    }
+  }
+}
+.demo3-footer{
+  position: fixed;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  box-sizing: border-box;
+  padding:0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(153, 233, 240, 0.5);
+  [class^=demo3-btn]{
+    width: 40vw;
+    height: 43px;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color:#fff;
+    a{
+      color:#fff;
+    }
+  }
+  .demo3-btn1{
+    background: #f66f6f;
+  }
+  .demo3-btn2{
+    background: #fbb435;
+  }
+}
+
+.data{
+  display: none;
+}

@@ -1,0 +1,87 @@
+@import  (reference) "comment";
+body{
+  background: #fafafa;
+}
+section{
+  width: 95%;
+  margin:0 auto;
+  margin-bottom: 10px;
+}
+.role-section1{
+  height: 30px;
+  text-align: center;
+  color: #333;
+  line-height: 30px;
+  margin-top:50px;
+  background: #fff;
+}
+
+.role-section2{
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  padding:10px 15px;
+  box-sizing: border-box;
+  >div{
+    flex:0 0 50%;
+    margin-bottom:10px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    [class^="icon-"]{
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right:10px;
+      flex-shrink: 0;
+    }
+    .icon-lr{
+      .backgroundPic("../img/lang.jpg");
+    }
+    .icon-hunter{
+      .backgroundPic("../img/猎人.jpg");
+    }
+    .icon-yy{
+      .backgroundPic("../img/yuyanjia.jpg");
+    }
+    .icon-nw{
+      .backgroundPic("../img/nvwu.jpg");
+    }
+    .icon-cm{
+      .backgroundPic("../img/cunmin.jpg");
+    }
+  }
+}
+
+.flexbox{
+  height: 15vh;
+}
+
+.role-section3{
+  padding:10px 0;
+  text-align: center;
+  span:nth-child(1){
+    font-weight: 700;
+    font-size: 16px;
+  }
+  input{
+    width: 30px;
+    background: #ccc;
+    text-align: center;
+    color: orange;
+  }
+  span:last-child{
+    font-size: 11px;
+    color: orange;
+  }
+}
+
+.roles-footer{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  background: #fff;
+}
+

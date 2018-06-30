@@ -1,0 +1,68 @@
+@import (reference)"comment.less";
+.flop-section1{
+  height: e("calc(100vh - 125px)");
+  box-sizing: border-box;
+  margin-top: 45px;
+  background: @maincolor;
+  padding-top: 20px;
+  .frame{
+    width: 160px;
+    height: 240px;
+    margin:0 auto;
+    background: #ffedc5;
+    position: relative;
+    border:2px solid #fff;
+   .order{
+      content: "1";
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top: -20px;
+      left:62px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border:1px solid orange;
+      background: #fff;
+      text-align: center;
+      line-height: 40px;
+      color:red;
+    }
+    .cover{
+      width: 160px;
+      height: 240px;
+      .backgroundPic("../img/卡背图.jpg");
+    }
+    .secretInfo{
+      padding-top:30px;
+      width: 160px;
+      height: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color:blue;
+      font-size: 40px;
+      position: absolute;
+      top:0;
+      left:0;
+      box-sizing: border-box;
+      img{
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.flop-footer{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left:0;
+  background: @maincolor;
+  padding-top:20px;
+  .btn{
+    width: 70vw;
+  }
+}
