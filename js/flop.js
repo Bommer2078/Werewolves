@@ -58,19 +58,15 @@ window.addEventListener("load",function(){
 
     // 注册点击事件
     btn.addEventListener("click",function(){
-        if(clickTimes==(rolesArr.length*2)+1){
-            dataManage("rolesStr",rolesArr);
-            dataManage("roleJSONs",roleJSONs);
-            // 设置法官数据
-            judgeData = {"curDay":1,"curEvent":0,"checkLog":true,"roleSkill":""}
-            dataManage("judgeData",judgeData);
-            window.location.href = "../html/demo2.html"
-            return null;
-        }
         if(clickTimes%2 == 0){
             if(clickTimes==(rolesArr.length*2)){
-                change(false);
-                btn.innerHTML = "法官查看";
+                dataManage("rolesStr",rolesArr);
+                dataManage("roleJSONs",roleJSONs);
+                // 设置法官数据
+                judgeData = {"curDay":1,"curEvent":0,"checkLog":true,"roleSkill":""}
+                dataManage("judgeData",judgeData);
+                window.location.href = "../html/demo2.html"
+                return null;;
             }
             else{
                 order.innerHTML = parseInt(clickTimes/2)+1;
@@ -81,7 +77,7 @@ window.addEventListener("load",function(){
         else{
             deal(parseInt(clickTimes/2));
             if(clickTimes==(rolesArr.length*2-1)){
-                btn.innerHTML = "隐藏并传递给法官";
+                btn.innerHTML = "法官查看";
             }
             else{
                 btn.innerHTML = "隐藏并传递给" + (parseInt(clickTimes/2)+2)+ "号";
